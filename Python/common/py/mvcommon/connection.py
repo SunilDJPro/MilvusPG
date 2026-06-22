@@ -44,7 +44,7 @@ def get_client(
 
     # Standalone / remote server.
     return MilvusClient(
-        uri=uri or env_uri or "http://localhost:19530",
+        uri=uri or env_uri or "http://172.16.16.29:19530", # SMTAIWS - Local IP
         token=token or env_token or "",
     )
 
